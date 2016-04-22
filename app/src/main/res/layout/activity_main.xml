@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context="com.example.luweicheng.thread.MainActivity">
+   <Button
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:id="@+id/startNewThread"
+       android:text="开启一个新的时间线程"/>
+    <Button
+        android:text="post发送"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/postButton"/>
+    <Button
+        android:text="从主线程发送消息到子线程"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/sendFromMain"/>
+    <Button
+        android:text="进入AsyncTask处理界面"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/startAnotherActivity"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/time"/>
+</LinearLayout>
